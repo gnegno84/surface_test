@@ -1,10 +1,7 @@
 defmodule StestWeb.TestView do
   use Surface.LiveView
 
-  import Phoenix.HTML.Form, only: [select: 4]
-
   alias Surface.Components.Form
-  alias Surface.Components.Form.Input.InputContext
   alias Surface.Components.Form.{Field, Label, Select, TextInput}
 
   alias StestWeb.Components.Form.{TestSelect}
@@ -18,7 +15,7 @@ defmodule StestWeb.TestView do
       <div class="box">
         <h3> Test select </h3>
 
-        <Form id="form_test" for={{ :test_data }} change="update_params" submit="confirm" opts={{ autocomplete: "off" }}>
+        <Form for={{ :test_data }} change="update_params" submit="confirm" opts={{ autocomplete: "off" }}>
             <Field name="input_data">
               <Label class="claim-label">Test input</Label>
               <div data-control>
