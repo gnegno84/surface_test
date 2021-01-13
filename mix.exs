@@ -47,7 +47,7 @@ defmodule Stest.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:surface, git: "https://github.com/msaraiva/surface.git", tag: "b70421a4a937f1a2cc094f44d3267dc5581f57cd"}
+      {:surface, git: "https://github.com/msaraiva/surface.git", tag: "146c75e3a29f06f320486ba385c3d9b129ce2f6e"}
     ]
   end
 
