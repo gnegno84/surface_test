@@ -3,7 +3,7 @@
 This repo is just a container for some tests and experiments with Surface 
 
 It was started from the Phoenix Live mix command.
-Actually, there's just one test page of interest (http://localhost:4000/test)
+Actually, there are just two test pages of interest, one based on Surface (http://localhost:4000/test) and the other reproducing the same scenario using LiveView (http://localhost:4000/lv-test) 
 
 To start your Phoenix server:
 
