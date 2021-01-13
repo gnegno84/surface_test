@@ -19,6 +19,8 @@ defmodule StestWeb.Router do
 
     live "/", PageLive, :index
     live "/test", TestView
+    live "/lv-test", TestLiveView
+
 
   end
 

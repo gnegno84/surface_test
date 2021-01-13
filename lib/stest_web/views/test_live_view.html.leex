@@ -1,0 +1,17 @@
+<div class="main">
+    <%= form = form_for :test_data, "#", [phx_change: :update_params, phx_submit: :confirm] %>
+      <div data-control>
+        <%= text_input form, :input_data, placeholder: "I am a good old text input", value: @test_data["input_data"] %>
+      </div>
+      <div data-control>
+        <%= select form, :select_1, get_options(), prompt: "First select", selected: @test_data["select_1"], class: if is_selected(@test_data["select_1"]), do: "is-valid" %>
+      </div>
+      <div data-control>
+        <%= select form, :select_2, get_options(), prompt: "Another select", selected: @test_data["select_2"], class: if is_selected(@test_data["select_2"]), do: "is-valid" %>
+      </div>
+
+      <p> <%= inspect(@test_data) %> </p>
+
+      <%= submit "Add", phx_disable_with: "Adding..." %>
+    </form>
+</div>
